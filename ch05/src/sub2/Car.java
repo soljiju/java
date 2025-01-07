@@ -1,5 +1,7 @@
 package sub2;
 
+
+
 //Car 클래스 정의(설계)
 public class Car {
 
@@ -13,7 +15,7 @@ public class Car {
 	public Car(String name, String color, int speed) {
 		this.name = name;
 		this.color = color;
-		this.color = speed;
+		this.speed = speed;
 	}
 	
 	//기능(멤버 메서드) - 클래스 기능은 무조건 public 선언
@@ -31,4 +33,13 @@ public class Car {
 		 System.out.println("차량색 : " + this.color);
 		 System.out.println("현재속도 : " + this.speed);
 }
-}
+	//Getter, Setter 정의(옵션) - 캡슐화된 속성을 수정하기 위한 메서드
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	}
+

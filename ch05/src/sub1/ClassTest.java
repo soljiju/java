@@ -57,14 +57,14 @@ public class ClassTest {
 		 * 
 		 * 
 		 */
-		Account woori = new Account();
-		woori.bank = "우리은행";
-		woori.id = "110-11-1021";
-		woori.name = "김춘추";
-		woori.balance = 10000;
+		Account wr = new Account();
+		wr.bank = "우리은행";
+		wr.id = "110-11-1021";
+		wr.name = "김춘추";
+		wr.balance = 10000;
 		
-		woori.deposit(10000);
-		woori.withdraw(5000);
-		woori.show();
+		wr.deposit(10000);
+		wr.withdraw(5000);
+		wr.show();
 	}
 }
