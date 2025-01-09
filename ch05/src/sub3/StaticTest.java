@@ -23,7 +23,7 @@ public class StaticTest {
 		// 정적 변수, 정적 메서드
 		Car sonata = new Car("소나타", "흰색", 10);
 		Car avante = new Car("아반테", "검정", 20);
-		Car grande = new Car("그랜져", "흰색", 30);
+		Car grande = new Car("그랜져", "은색", 30);
 		
 		sonata.Show();
 		avante.Show();
@@ -33,7 +33,7 @@ public class StaticTest {
 		System.out.println("전체 차량 수 : " Car.count);
 	
 		//전체 차량 수 클래스 메서드
-		System.out.println("전체 차량 수 : " + Car.getcount());
+		System.out.println("전체 차량 수 : " + Car.getCount());
 		
 		// Increment 실습
 		Increment inc1 = new Increment();
@@ -43,9 +43,8 @@ public class StaticTest {
 		// 싱글톤 실습
 		calc c1 = new calc();
 		
-		int result + c1.plus(1, 2);
-		
-		System.out.println("result : " + result);
+		int result1 + c1.plus(1, 2);
+		System.out.println("result1 : " + result1);
 		
 		calc c2 = calc.getInstance();
 		

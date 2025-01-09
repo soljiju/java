@@ -4,10 +4,10 @@ package sub4;
 public class Account {
 
      // 속성 (필드, 멤버변수)
-	private String bank;
-	private String id;
-	private String name;
-	private int balance;
+	protected String bank;
+	protected String id;
+	protected String name;
+	protected int balance;
 	 //생성자
 	public Account (String bank, String id, String name, int balance) {
 		

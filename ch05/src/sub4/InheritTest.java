@@ -59,5 +59,23 @@ public class InheritTest {
 		bongo.load(100);
 		bongo.speedUp(60);
 		bongo.show();
+		
+		// Account 상속 객체 생성
+		StockAccount kb = new StockAccount("KB증권", "101-11-1001", "홍길동", 10000, "삼성전자", 0, 50000);
+		kb.deposit(1000000);
+		kb.buy(10, 500000);
+		kb.show();
+		
+		kb.sell(5, 60000);
+		kb.show();
+		
+		
+		// Person 상송 객체 생성
+		Doctor doctor = new Doctor("김유신", 33,"소아과");
+		Engineer engineer = new Engineer("김춘추", 34,"소프트웨어");
+		
+		doctor.work();
+		engineer.work();
+		
 	}
 }

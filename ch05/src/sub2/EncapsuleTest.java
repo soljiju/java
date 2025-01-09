@@ -75,7 +75,7 @@ public class EncapsuleTest {
 	     도서관 관리 시스템의 일부로 Book 클래스를 정의하세요.
 	     
 	     */
-	    book book1 = new book("삼국지", "나관중", "10001" 10);
+	    book book1 = new book("삼국지", "나관중", "10001", 10);
 	    book1.show();
 	    
 	    boolean isOk = book1.borrowBook();
