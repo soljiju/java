@@ -8,6 +8,7 @@ public class SupersonicAirplane extends Airplane {
 	public int flyMode = NORMAL;
 	
 	//메소드 재정의
+	@Override
 	public void fly() {
 		if(flyMode == supersonic) {
 			System.out.println("초음속 비행합니다.");
