@@ -70,10 +70,9 @@ public class ForTest {
 			}
 			
 			System.out.print("\n");//개행(줄바꿈)
-			
+		}
 	    for(int start=10 ; start>=1 ; start--) {
-				
-				for(int end=1 ; end<=start; end++) {
+			for(int end=1 ; end <= start; end++) {
 					System.out.print("★");
 				}
 				
