@@ -30,7 +30,7 @@ public class StaticTest {
 		grande.Show();
 		
 		//전체 차량 수 클래스 변수
-		System.out.println("전체 차량 수 : " Car.count);
+		System.out.println("전체 차량 수 : " + Car.count);
 	
 		//전체 차량 수 클래스 메서드
 		System.out.println("전체 차량 수 : " + Car.getCount());
@@ -41,9 +41,9 @@ public class StaticTest {
 		Increment inc3 = new Increment();
 		
 		// 싱글톤 실습
-		calc c1 = new calc();
+		calc c1 = calc.getInstance();
 		
-		int result1 + c1.plus(1, 2);
+		int result1 = c1.plus(1, 2);
 		System.out.println("result1 : " + result1);
 		
 		calc c2 = calc.getInstance();
