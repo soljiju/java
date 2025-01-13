@@ -5,18 +5,18 @@ package test3;
  * 내용 : 클래스 상속 연습문제
  */
 class Customer {
-	???????? int id;
-			 String name;
-			 String grade;
-			 int point;
-			 double pointRatio;
+	protected int id;
+	protected String name;
+	protected String grade;
+	protected int point;
+	protected double pointRatio;
 			 
 	public Customer(int id, String name) {
-		this.id = id;
-		this.name = name;
-		this.grade = "SILVER";
-		this.point = 100;
-		this.pointRatio = 0.01;
+			this.id = id;
+			this.name = name;
+			this.grade = "SILVER";
+			this.point = 100;
+			this.pointRatio = 0.01;
 	}
 	
 	public int calcPrice(int price) {
@@ -36,19 +36,21 @@ class Customer {
 }
 
 
-class VipCustomer ??? {
+class VipCustomer extends Customer {
 	
 	private double saleRatio;
 	
 	public VipCustomer(int id, String name) {
-		???
+		super(id, name);
 		super.grade = "VIP";
 		super.point = 1000;
 		super.pointRatio = 0.05;
-		super.saleRatio = 0.1;
+		this.saleRatio = 0.1;
 	}
-	
-	public int calc
+	@Override
+	public int calcPrice(int price) {
+			point += price * pointRatio;
+			return price - (int)(price * saleRatio);
 	}
 }
 
@@ -59,5 +61,14 @@ class VipCustomer ??? {
 
 
 public class Test07 {
-
+		public static void main(String [] args) {
+				Customer	kim = new Customer(1001, "김춘추");
+				VipCustomer	lee = new VipCustomer(1002, "이순신");
+				
+				System.out.println("김춘추님이 지불할 금액 : "+kim.calcPrice(10000));
+				System.out.println("이순신님이 지불할 금액 : "+lee.calcPrice(10000));
+				
+				kim.showInfo();
+				lee.showInfo();
+		}
 }

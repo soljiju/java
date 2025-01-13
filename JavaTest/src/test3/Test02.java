@@ -9,14 +9,14 @@ class King {
 	private String name;
 	private int year;
 	
-	public ?????{
+	public King(int year){
 		this("정조");
 		this.year = year;
 	}
-	public ??? {
+	public King(String name) {
 		this.name = name;
 	}
-	public ??? {
+	public King(String name, int year) {
 		this.name = name;
 		this.year = year;
 	}

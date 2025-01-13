@@ -21,8 +21,8 @@ public class Test01 {
 		System.out.println("-------------");
 	}
 	public static void main(String[] args) {
-		????kim = new ???
-		????lee = new ???
+		Test01 kim = new Test01("김유신", 23);
+		Test01 lee = new Test01("이순신", 31);
 				
 		kim.show();
 		lee.show();
