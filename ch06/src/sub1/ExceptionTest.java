@@ -116,6 +116,9 @@ public class ExceptionTest {
 		} catch (InvocationTargetException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			// 예외처리 발생여부에 상관없이 마지막에 무조건 실행되는 로직
+			System.out.println("finally 실행...");
 		}
 	
 		
