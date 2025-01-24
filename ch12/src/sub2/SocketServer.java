@@ -7,21 +7,19 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /*
- * 날짜 : 2025/01/21
- * 이름 : 주솔지
- * 내용 : Java Http 통신 실습
-
+ * 날짜 : 2025/01/22
+ * 이름 : 김철학
+ * 내용 : Java 소켓 프로그래밍 실습
  */
 public class SocketServer {
-
+	
 	public static void main(String[] args) {
 		
 		System.out.println("[Server]");
 		
 		ServerSocket serverSocket = null;
 		
-		try {
-			
+		try {			
 			serverSocket = new ServerSocket();
 			serverSocket.bind(new InetSocketAddress("127.0.0.1", 5001));
 			System.out.println("연결 대기...");
@@ -29,7 +27,7 @@ public class SocketServer {
 			Socket socket = serverSocket.accept();
 			System.out.println("연결 수립...");
 			
-			//데이터 수신
+			// 데이터 수신
 			InputStream is = socket.getInputStream();
 			byte[] bytes = new byte[100];
 			int readBytes = is.read(bytes);
@@ -42,18 +40,20 @@ public class SocketServer {
 			OutputStream os = socket.getOutputStream();
 			String msg = "Hello Client!";
 			
-			byte[] msgBytes= msg.getBytes();
+			byte[] msgBytes = msg.getBytes();
 			os.write(msgBytes);
 			os.flush();
 			System.out.println("데이터 송신 완료...");
 			
 			os.close();
-			is.close();
+			is.close();			
 			socket.close();
 			
-		} catch (Exception e) {
+			
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 		
 		System.out.println("Server 종료...");
 	}

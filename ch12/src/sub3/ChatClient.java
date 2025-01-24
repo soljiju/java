@@ -3,13 +3,11 @@ package sub3;
 import java.net.Socket;
 
 /*
- * 날짜 : 2025/01/21
- * 이름 : 주솔지
+ * 날짜 : 2025/01/22
+ * 이름 : 김철학
  * 내용 : Java 채팅 프로그래밍 실습
-
  */
 public class ChatClient {
-
 	public static void main(String[] args) {
 		
 		System.out.println("[Client]");
@@ -25,10 +23,11 @@ public class ChatClient {
 			receiver.start();
 			sender.start();
 			
-		} catch (Exception e) {
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		
 		//System.out.println("Client 채팅 종료...");
+		
 	}
 }
