@@ -41,7 +41,7 @@ public class MapTest {
 		 }
 		 
 		 // List와 Map을 이용한 자료구조
-		 List<Map<Integer, Apple>> mapList = new ArrayList()<>();
+		 List<Map<Integer, Apple>> mapList = new ArrayList<>();
 		 
 		 Map<Integer, Apple> m1= new HashMap<>();
 		 m1.put(101, new Apple("한국", 3000));
