@@ -1,11 +1,13 @@
 package sub8;
 
-public interface Tv {
+public class Tv {
 
-	public void powerOn("Tv powerOn...");{
-	System.out.println("Tv powerOff");
+	public void powerOn() {
+		System.out.println("Tv powerOn...");
 	}
-	public void powerOn("Tv powerOn...");{
-	System.out.println("Tv powerOff");
-}
+	
+	public void powerOff() {
+		System.out.println("Tv powerOff...");
+	}
+	
 }

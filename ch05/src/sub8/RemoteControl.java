@@ -1,8 +1,8 @@
 package sub8;
 
-public class interface RemoteControl {
-
-	public abstract void powerOn();
+public interface RemoteControl {
+	
+	public abstract void powerOn(); 
 	public abstract void powerOff();
 	
 	public void chUp(); // abstract 키워드 생략
@@ -10,4 +10,5 @@ public class interface RemoteControl {
 	
 	public void soundUp();
 	public void soundDown();
+
 }

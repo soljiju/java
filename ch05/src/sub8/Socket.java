@@ -1,8 +1,8 @@
 package sub8;
 
-public interface class Socket {
+public interface Socket {
 
-	
 	public void switchOn();
-	public void switchOff()l
+	public void switchOff();
+	
 }

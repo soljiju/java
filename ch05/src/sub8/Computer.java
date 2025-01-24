@@ -1,6 +1,8 @@
 package sub8;
 
-public class Computer {
+public interface Computer {
+	
 	public void boot();
 	public void internet();
+
 }
